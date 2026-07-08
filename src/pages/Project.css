@@ -1,0 +1,93 @@
+.project {
+  padding: clamp(3rem, 8vw, 5rem) 0 5rem;
+}
+
+.project__badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.project__title {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  max-width: 20ch;
+}
+
+.project__desc {
+  color: var(--ink-soft);
+  max-width: 62ch;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.project__card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(23, 23, 43, 0.08);
+}
+
+.project__card-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project__card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.6rem;
+}
+
+.project__card-desc {
+  color: var(--ink-soft);
+  margin-top: 0.7rem;
+  line-height: 1.7;
+}
+
+.project__card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.project__card-pill {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .project__grid {
+    grid-template-columns: 1fr;
+  }
+}

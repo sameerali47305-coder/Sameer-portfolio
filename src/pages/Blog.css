@@ -1,0 +1,71 @@
+.blog {
+  padding: clamp(3rem, 8vw, 5rem) 0 5rem;
+}
+
+.blog__badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.blog__title {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  max-width: 22ch;
+}
+
+.blog__desc {
+  color: var(--ink-soft);
+  max-width: 62ch;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  max-width: 68ch;
+}
+
+.blog__card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.blog__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(23, 23, 43, 0.08);
+}
+
+.blog__card-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.blog__card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.6rem;
+}
+
+.blog__card-excerpt {
+  color: var(--ink-soft);
+  margin-top: 0.6rem;
+  line-height: 1.7;
+}

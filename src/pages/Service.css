@@ -1,0 +1,116 @@
+.service {
+  padding: clamp(3rem, 8vw, 5rem) 0 5rem;
+}
+
+.service__badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.service__title {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  max-width: 22ch;
+}
+
+.service__desc {
+  color: var(--ink-soft);
+  max-width: 62ch;
+  line-height: 1.8;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.service__card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.service__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(23, 23, 43, 0.08);
+}
+
+.service__card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.service__card-desc {
+  color: var(--ink-soft);
+  margin-top: 0.7rem;
+  line-height: 1.7;
+}
+
+.service__subheading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service__process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.service__process-item {
+  border-left: 2px solid var(--line);
+  padding-left: 1.2rem;
+}
+
+.service__process-step {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.service__process-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.5rem;
+}
+
+.service__process-desc {
+  color: var(--ink-soft);
+  margin-top: 0.4rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .service__grid {
+    grid-template-columns: 1fr;
+  }
+  .service__process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .service__process {
+    grid-template-columns: 1fr;
+  }
+}
